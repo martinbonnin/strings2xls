@@ -9,7 +9,7 @@ import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-class ExportTask(): DefaultTask() {
+open class ExportTask(): DefaultTask() {
     @InputDirectory
     lateinit var inputDir: File
 

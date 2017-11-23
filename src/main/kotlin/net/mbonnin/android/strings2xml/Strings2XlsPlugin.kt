@@ -3,7 +3,7 @@ package net.mbonnin.android.strings2xml
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-class Strings2XlsPlugin : Plugin<Project> {
+open class Strings2XlsPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         val xlsFile = project.file("./build/outputs/xls/strings.xls").absoluteFile
         val intputDir = project.file(".")
