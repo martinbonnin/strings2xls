@@ -2,7 +2,7 @@ group 'net.mbonnin'
 version '0.1-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.1.4-3'
+    ext.kotlin_version = '1.1.60'
 
     repositories {
         mavenCentral()
@@ -19,13 +19,18 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     testCompile 'junit:junit:4.12'
+    implementation "commons-codec:commons-codec:1.5"
+    implementation "dom4j:dom4j:1.6.1"
+    implementation "org.apache.poi:poi:3.9"
+    implementation "com.beust:jcommander:1.35"
+    implementation "org.apache.commons:commons-lang3:3.0"
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "1.6"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "1.6"
 }
