@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/strings2xml.iml" filepath="$PROJECT_DIR$/.idea/modules/strings2xml.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/strings2xml_main.iml" filepath="$PROJECT_DIR$/.idea/modules/strings2xml_main.iml" group="strings2xml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/strings2xml_test.iml" filepath="$PROJECT_DIR$/.idea/modules/strings2xml_test.iml" group="strings2xml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/strings2xls.iml" filepath="$PROJECT_DIR$/.idea/modules/strings2xls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/strings2xls_main.iml" filepath="$PROJECT_DIR$/.idea/modules/strings2xls_main.iml" group="strings2xls" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/strings2xls_test.iml" filepath="$PROJECT_DIR$/.idea/modules/strings2xls_test.iml" group="strings2xls" />
     </modules>
   </component>
 </project>

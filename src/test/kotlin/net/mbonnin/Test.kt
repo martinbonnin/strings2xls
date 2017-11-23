@@ -1,6 +1,6 @@
 package net.mbonnin
 
-import net.mbonnin.kotlin_skeleton.world
+import net.mbonnin.strings2xml.world
 import org.junit.Test
 
 class TestDetector {

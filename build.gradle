@@ -1,6 +1,3 @@
-group 'net.mbonnin'
-version '0.1-SNAPSHOT'
-
 buildscript {
     ext.kotlin_version = '1.1.60'
 
@@ -12,10 +9,20 @@ buildscript {
     }
 }
 
+plugins {
+    id 'com.gradle.plugin-publish' version '0.9.9'
+}
 apply plugin: 'kotlin'
+
+def pluginVersion = '0.1-SNAPSHOT'
+group 'net.mbonnin'
+version "$pluginVersion"
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://maven.google.com'
+    }
 }
 
 dependencies {
@@ -26,6 +33,7 @@ dependencies {
     implementation "org.apache.poi:poi:3.9"
     implementation "com.beust:jcommander:1.35"
     implementation "org.apache.commons:commons-lang3:3.0"
+    implementation gradleApi()
 }
 
 compileKotlin {
@@ -33,4 +41,18 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.6"
+}
+
+pluginBundle {
+    website = 'https://github.com/martinbonnin/strings2xls'
+    vcsUrl = 'https://github.com/martinbonnin/strings2xls'
+    plugins {
+        strings2XlsPlugin {
+            id = 'net.mbonnin.android.strings2xls'
+            displayName = 'Android Strings to XLS'
+            description = 'A plugin that takes your strings.xml files and merges them in a single excel file for your translators'
+            tags = ['android', 'translation', 'strings', 'xls']
+            version = "$pluginVersion"
+        }
+    }
 }

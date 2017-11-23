@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="kotlin-skeleton_main" target="1.8" />
       <module name="kotlin-skeleton_test" target="1.8" />
+      <module name="strings2xls_main" target="1.8" />
+      <module name="strings2xls_test" target="1.8" />
       <module name="strings2xml_main" target="1.8" />
       <module name="strings2xml_test" target="1.8" />
     </bytecodeTargetLevel>
