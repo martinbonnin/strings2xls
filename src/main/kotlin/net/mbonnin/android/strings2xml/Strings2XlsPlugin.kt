@@ -8,7 +8,7 @@ open class Strings2XlsPlugin : Plugin<Project> {
         val xlsFile = project.file("./build/outputs/xls/strings.xls").absoluteFile
         val intputDir = project.file(".")
 
-        val task = project.tasks.create("generateCardIds", ExportTask::class.java) {
+        val task = project.tasks.create("strings2Xls", ExportTask::class.java) {
             it.inputDir = intputDir
             it.outputFile = xlsFile
         }

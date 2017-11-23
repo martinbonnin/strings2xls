@@ -1,11 +1,16 @@
 package net.mbonnin
 
-import net.mbonnin.strings2xml.world
+import cz.tomaskypta.tools.langtool.exporting.ExportConfig
+import cz.tomaskypta.tools.langtool.exporting.ToolExport
 import org.junit.Test
+import java.io.File
 
 class TestDetector {
     @Test
     fun test() {
-        System.out.println(world())
+        val config = ExportConfig()
+        config.inputExportProject = File("./test").absolutePath
+        config.outputFile = File("exported.xls").absolutePath
+        ToolExport.run(config)
     }
 }
